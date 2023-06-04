@@ -1,0 +1,147 @@
+.staffinfo-box {
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    border: 1px solid #e4e4e4;
+    width: 100%;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+    border-radius: 2px;
+    margin-bottom: 15px;
+}
+.staffleft-box {
+    float: left;
+    padding-right: 10px;
+}
+.staffleft-box img {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    z-index: 1;
+    background: #fff;
+}
+.staffleft-content {
+    overflow: hidden;
+}
+.staffinfo-box h5 {
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    font-family: 'Roboto-Bold';
+    font-size: 14px;
+}
+.staffinfo-box p {
+    margin-bottom: 1px;
+    display: block;
+    font-size: 10px;
+    line-height: normal;
+}
+.staffsub {
+    padding-top: 4px;
+    display: inline-block;
+}
+.overlay3 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 101%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgba(0, 0, 0, 0.69);
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+    border-radius: 4px;
+    border: 0px solid rgba(0, 0, 0, 0.69);
+}
+.stafficons {
+    display: block;
+    text-align: center;
+    padding-left: 100px;
+}
+.stafficons a {
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+    font-size: 30px;
+    padding-right: 8px;
+    padding-left: 8px;
+    line-height: 100px;
+}
+
+.stafficons a:after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    background-image: radial-gradient(circle, #000 10%, transparent 10.01%) !important;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    transform: scale(10, 10);
+    opacity: 0;
+    transition: transform .5s, opacity 1s;
+}
+
+.stafficons a:hover {
+    color: #999;
+    text-decoration: none;
+}
+.staffinfo-box:hover .overlay3, .fadeoverlay:hover .overlay3 {
+    opacity: 1;
+}
+
+.sfborder .img-circle, .box-profile .img-circle, .table td .img-circle {
+    height: 100px;
+    flex-shrink: 0;
+    min-width: 100px;
+    min-height: 100px;
+  }
+
+  .profile-user-img {
+    margin: 5px auto;
+    width: 100px;
+    padding: 3px;
+    border: 3px solid #d2d6de;
+  }
+
+  .img-circle {
+    border-radius: 50%;
+  }
+  .box-profile{
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px;
+    padding: 10px;
+  }
+
+  .profile-username {
+    font-size: 15px;
+    margin-top: 5px;
+  }
+
+  .list-group-unbordered>.list-group-item {
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .text-aqua {
+    color: #00c0ef !important;
+  }
+
+  .pull-right {
+    float: right!important;
+  }
+
+  .actions .custom-btn{
+    padding: 0.1rem 0.5rem;
+  }
